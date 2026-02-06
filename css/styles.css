@@ -1,1 +1,265 @@
+/* Captain Clean - Shared Styles (White Theme) */
+
+/* ===== Theme ===== */
+:root{
+  --bg:#ffffff;
+  --card:#ffffff;
+  --text:#0f172a;          /* near-black */
+  --muted:#475569;         /* slate */
+  --accent:#2563eb;        /* blue */
+
+  --border:rgba(15,23,42,.12);
+  --shadow: 0 10px 25px rgba(15,23,42,.10);
+  --radius:18px;
+}
+
+*{ box-sizing:border-box; }
+a{ color:inherit; text-decoration:none; }
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height:100vh;
+}
+
+/* ===== Layout ===== */
+.wrap{
+  max-width:980px;
+  margin:0 auto;
+  padding:22px 16px 40px;
+}
+@media (max-width:420px){
+  .wrap{ padding:18px 14px 36px; }
+}
+
+/* ===== UI bits ===== */
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(37,99,235,.12);
+}
+
+/* Pills / Buttons */
+.pill, .back{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 12px;
+  border:1px solid var(--border);
+  background: rgba(15,23,42,.03);
+  border-radius:999px;
+  box-shadow: var(--shadow);
+  color: var(--muted);
+  font-size:13px;
+  white-space:nowrap;
+}
+.pill strong{ color: var(--text); }
+
+/* Cards */
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Optional logo header */
+.headerBrand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:8px;
+}
+.headerBrand img{
+  height:44px;
+  width:auto;
+  display:block;
+}
+
+/* ===== HOME PAGE ===== */
+.top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:18px;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.title{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:.2px;
+  margin:0;
+}
+
+.subtitle{
+  margin:0;
+  color:var(--muted);
+  font-size:14.5px;
+  line-height:1.4;
+  max-width:52ch;
+}
+
+@media (min-width:720px){
+  .title{ font-size:34px; }
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:12px;
+  margin-top:14px;
+}
+@media (min-width:720px){
+  .grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap:14px;
+  }
+}
+
+/* "Tile" = clickable card */
+.tile{
+  padding:14px 14px 12px;
+  min-height:110px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition: transform .12s ease, border-color .12s ease;
+}
+.tile:hover{
+  transform: translateY(-2px);
+  border-color: rgba(37,99,235,.28);
+}
+.tile:active{ transform: translateY(0px); }
+
+.tile h3{
+  margin:0;
+  font-size:16px;
+  font-weight:800;
+  line-height:1.2;
+}
+
+.tile p{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.35;
+}
+
+.tag{
+  margin-top:12px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:12.5px;
+  color:var(--muted);
+}
+
+/* Footer box on home page */
+.footerBox{
+  margin-top:18px;
+  padding:14px;
+  border:1px solid var(--border);
+  background: rgba(15,23,42,.03);
+  border-radius: var(--radius);
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.45;
+}
+.footerBox b{ color:var(--text); }
+
+.smallLinks{
+  margin-top:8px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.smallLinks a{
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background: rgba(15,23,42,.03);
+  color:var(--text);
+  font-size:12.5px;
+}
+
+/* ===== STAIN PAGES ===== */
+.pageTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.h1{
+  margin:10px 0 6px;
+  font-size:26px;
+  font-weight:900;
+}
+
+.sub{
+  margin:0 0 14px;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.section{
+  padding:14px;
+  margin-top:12px;
+}
+
+.section h2{
+  margin:0 0 10px;
+  font-size:16px;
+}
+
+.section ul, .section ol{
+  margin:8px 0 0 18px;
+  line-height:1.55;
+}
+
+.section li{
+  margin:6px 0;
+}
+
+.note{
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.45;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:var(--muted);
+  font-size:12.5px;
+}
+
+/* YouTube embed */
+.videoWrap{
+  position:relative;
+  padding-top:56.25%;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:#f1f5f9;
+}
+.videoWrap iframe{
+  position:absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+}
 
