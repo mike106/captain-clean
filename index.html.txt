@@ -1,0 +1,136 @@
+**Updated Captain Clean Index.html file
+-change to white background
+-Add logo Image
+
+
+
+
+----------------------------------
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Captain Clean</title>
+  <meta name="description" content="Tap your stain for step-by-step instructions and a video demo." />
+
+  <!-- Shared CSS (Option B) -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+
+      <!-- OPTIONAL LOGO (uncomment when you add /assets/captain-clean-logo.png)
+      <div class="headerBrand">
+        <img src="./assets/captain-clean-logo.png" alt="Captain Clean">
+        <div class="brand">
+          <h1 class="title">Captain Clean</h1>
+          <p class="subtitle">Tap the stain you need help with. You’ll get written steps and a quick video demo.</p>
+        </div>
+      </div>
+      -->
+
+      <!-- DEFAULT (no logo) -->
+      <div class="brand">
+        <h1 class="title">Captain Clean</h1>
+        <p class="subtitle">
+          Tap the stain you need help with. You’ll get written steps and a quick video demo.
+        </p>
+      </div>
+
+      <div class="pill">
+        <span class="dot"></span>
+        <span><strong>Fast Tip:</strong> Test any solution in a hidden spot first.</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <a class="card tile" href="./stains/high-traffic.html">
+        <div>
+          <h3>High Traffic Areas</h3>
+          <p>Ground-in soil & dingy lanes. Lift dirt without damaging fibers.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/pet-stain.html">
+        <div>
+          <h3>Pet Stain Removal</h3>
+          <p>Urine or pet stains. Neutralize odor at the source.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet & Upholstery</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/red-wine.html">
+        <div>
+          <h3>Red Wine Stain</h3>
+          <p>Act fast. Blot, don’t scrub. Use the right rinse sequence.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet & Fabric</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/coffee.html">
+        <div>
+          <h3>Coffee Stain</h3>
+          <p>Tannin-based stain. Flush and lift without setting it.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet & Upholstery</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/pet-vomit.html">
+        <div>
+          <h3>Pet Vomit</h3>
+          <p>Remove solids safely, neutralize acids, then rinse thoroughly.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/magic-marker.html">
+        <div>
+          <h3>Magic Marker</h3>
+          <p>Dye-based ink. Use controlled solvent steps (no spreading).</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet & Fabric</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/ballpoint-pen.html">
+        <div>
+          <h3>Ballpoint Pen</h3>
+          <p>Oil-based ink. Lift gradually; don’t soak the backing.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet & Fabric</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/gum-wax.html">
+        <div>
+          <h3>Chewing Gum / Wax</h3>
+          <p>Harden, chip, then remove residue. Heat carefully only if needed.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet</span></div>
+      </a>
+
+      <a class="card tile" href="./stains/mold-mildew.html">
+        <div>
+          <h3>Mold / Mildew</h3>
+          <p>Stop moisture first. Clean + dry fast to prevent return.</p>
+        </div>
+        <div class="tag"><span class="dot"></span><span>Carpet & Surfaces</span></div>
+      </a>
+    </div>
+
+    <div class="footerBox">
+      <b>Safety first:</b> If you suspect biohazard, sewage, or widespread mold, don’t DIY it—call a pro.
+      <div class="smallLinks">
+        <a href="./stains/mold-mildew.html">Mold/Mildew Guide</a>
+        <a href="./stains/pet-stain.html">Pet Stain Guide</a>
+        <a href="./stains/high-traffic.html">Traffic Lane Guide</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
