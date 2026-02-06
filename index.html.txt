@@ -1,9 +1,3 @@
-**Updated Captain Clean Index.html file
--change to white background
--Add logo Image
-
-
-
 
 ----------------------------------
 
@@ -134,3 +128,4 @@
   </div>
 </body>
 </html>
+
