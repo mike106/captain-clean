@@ -8,29 +8,84 @@
 
   <!-- Shared CSS (Option B) -->
   <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Small, page-specific layout tweaks (keeps Option B intact) -->
+  <style>
+    .brandRow{
+      display:flex;
+      align-items:flex-start;
+      gap:14px;
+    }
+    .brandText{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    .brandLogo{
+      height:56px;
+      width:auto;
+      display:block;
+      margin-top:2px; /* keeps it visually aligned with heading/subheading */
+    }
+    @media (max-width:520px){
+      .brandRow{ align-items:center; }
+      .brandLogo{ height:44px; }
+    }
+
+    .proRow{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      margin-top:12px;
+    }
+    .proLogo{
+      height:54px;
+      width:auto;
+      display:block;
+      flex:0 0 auto;
+      margin-top:2px;
+    }
+    @media (max-width:520px){
+      .proRow{ align-items:center; }
+      .proLogo{ height:44px; }
+    }
+
+    .ctaBtn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(15,23,42,.12);
+      background:#2563eb;
+      color:#ffffff;
+      font-weight:700;
+      font-size:13.5px;
+      box-shadow: 0 10px 25px rgba(15,23,42,.10);
+      margin-top:10px;
+    }
+    .ctaBtn:hover{ filter:brightness(0.95); }
+    .ctaBtn:active{ transform:translateY(1px); }
+  </style>
 </head>
 
 <body>
   <div class="wrap">
-
     <div class="top">
-
-      <!-- OPTIONAL LOGO (uncomment when you add /assets/captain-clean-logo.png)
-      <div class="headerBrand">
-        <img src="./assets/captain-clean-logo.png" alt="Captain Clean">
-        <div class="brand">
+      <!-- Brand + Logo (logo to the RIGHT of the heading/subheading) -->
+      <div class="brandRow">
+        <div class="brandText">
           <h1 class="title">Captain Clean</h1>
-          <p class="subtitle">Tap the stain you need help with. You’ll get written steps and a quick video demo.</p>
+          <p class="subtitle">
+            Tap the stain you need help with. You’ll get written steps and a quick video demo.
+          </p>
         </div>
-      </div>
-      -->
 
-      <!-- DEFAULT (no logo) -->
-      <div class="brand">
-        <h1 class="title">Captain Clean</h1>
-        <p class="subtitle">
-          Tap the stain you need help with. You’ll get written steps and a quick video demo.
-        </p>
+        <img
+          class="brandLogo"
+          src="./assets/captain-clean-logo.png"
+          alt="Captain Clean Logo"
+        />
       </div>
 
       <div class="pill">
@@ -114,14 +169,30 @@
     </div>
 
     <div class="footerBox">
-      <b>Safety first:</b> If you suspect biohazard, sewage, or widespread mold, don’t DIY it—call a pro.
-      <div class="smallLinks">
-        <a href="./stains/mold-mildew.html">Mold/Mildew Guide</a>
-        <a href="./stains/pet-stain.html">Pet Stain Guide</a>
-        <a href="./stains/high-traffic.html">Traffic Lane Guide</a>
+      <h3 style="margin:0 0 6px; font-size:16px;">Do you need a Pro</h3>
+      <div class="proRow">
+        <img
+          class="proLogo"
+          src="./assets/gator-carpet-cleaning-logo.png"
+          alt="Gator Carpet Cleaning Logo"
+        />
+        <div>
+          <p style="margin:0; line-height:1.45;">
+            If you need Professional Help, give us a call at
+            <a href="tel:+19418390952" style="font-weight:800; text-decoration:underline;">(941) 839-0952</a>
+            or click the button.
+          </p>
+
+          <a class="ctaBtn" href="https://gatorcarpetcleaning.com" target="_blank" rel="noopener">
+            Get Help
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;">
+        <b>Safety first:</b> If you suspect biohazard, sewage, or widespread mold, don’t DIY it—call a pro.
       </div>
     </div>
-
   </div>
 </body>
 </html>
